@@ -232,6 +232,41 @@ padding: 5%;
   margin-top: 90px;
 }
 
+.btn-missione {
+  background-image: url('images/btn-missione-1.png');
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 110px;
+  width: 110px;
+  margin-top: 30px;
+  background-color: #E09170;
+  box-shadow: 0px 7px #C3572A;
+  border-radius: 35px;
+  cursor: pointer;
+  margin-right: 5%;
+}
+
+.btn-missione:hover {
+  background-image: url('images/btn-missione-br.png');
+  background-color: #fff !important;
+  }
+
+.btn-missione:active {
+  background-image: url('images/btn-missione-1.png');
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 110px;
+  width: 110px;
+  margin-top: 30px;
+  background-color: #E09170;
+  box-shadow: 0px 7px #C3572A;
+  border-radius: 35px;
+  cursor: pointer;
+transform: translateY(2px);
+}
+
 .btn-missione-dis {
   background-image: url('images/btn-missione-1.png');
   background-size: 70%;
@@ -241,8 +276,8 @@ padding: 5%;
   width: 110px;
   margin-top: 30px;
   margin-right: 5%;
-  background-color: #21CDBA;
-  border: 2px solid #1AA393;
+  background-color: #E09170;
+  border: 2px solid #C3572A !important;
   border-radius: 35px;
 }
 
@@ -254,9 +289,44 @@ padding: 5%;
   height: 110px;
   width: 110px;
   margin-top: 30px;
-  background-color: #21CDBA;
-  box-shadow: 0px 7px #1AA393;
+  background-color: #E09170;
+  box-shadow: 0px 7px #C3572A;
   border-radius: 35px;
+  cursor: pointer;
+}
+
+.btn-allenamento:hover {
+  background-image: url('images/btn-allenamento-br.png');
+  background-color: #fff !important;
+  }
+
+.btn-allenamento:active {
+  background-image: url('images/btn-allenamento-1.png');
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 110px;
+  width: 110px;
+  margin-top: 30px;
+  background-color: #E09170;
+  box-shadow: 0px 7px #C3572A;
+  border-radius: 35px;
+  cursor: pointer;
+transform: translateY(2px);
+}
+
+.btn-allenamento-dis {
+  background-image: url('images/btn-allenamento-1.png');
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 110px;
+  width: 110px;
+  margin-top: 30px;
+  background-color: #E09170;
+  border: 2px solid #C3572A;
+  border-radius: 35px;
+  cursor: pointer;
 }
 
 .schermate-gioco {
@@ -337,6 +407,7 @@ margin-top: 80px;
 }
 #slider1 .fp-controlArrow.fp-prev {
     background-image: url(images/prev-white.png) !important;
+    display: none;
     background-repeat: no-repeat;
     border-width: 0 !important;
     left: 0px;
@@ -344,6 +415,7 @@ margin-top: 80px;
 }
 #slider1 .fp-controlArrow.fp-next {
     background-image: url(images/next-white.png) !important;
+    display: none;
     background-repeat: no-repeat;
     border-width: 0 !important;
     right: 15px !important;
