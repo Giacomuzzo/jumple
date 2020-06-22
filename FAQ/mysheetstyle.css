@@ -23,34 +23,41 @@ body{
 }
 
 h1 {
-  font-size: 380%;
   font-family: Balsamiq Sans;
+  font-size: 380%;
+  color: #0E4438;
   font-weight: bold;
   margin-bottom: 5%;
   text-align: left !important;
+
 }
 
 h3 {
   font-size: 150%;
   font-family: Balsamiq Sans;
-  margin-bottom: 5%;
   color: #39A48C !important;
+  margin-bottom: 5%;
   text-align: left !important;
 }
 
-p {
+.btn-link {
   font-family: Balsamiq Sans;
-  font-size: 150%;
-  padding-top: 5%;
+  font-weight: bold;
+  color: #39A48C !important;
+  font-size: 100%;
   text-align: left !important;
 }
+
+.card-header {
+  background-color: transparent !important;
+}
+
 
 .s1 {
   background-image: url('images/bg-faq.png');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: top !important;
-
 }
 
 .s2 {
