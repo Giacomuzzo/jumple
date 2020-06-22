@@ -46,10 +46,64 @@ h3 {
   color: #39A48C !important;
   font-size: 100%;
   text-align: left !important;
+  padding: 6px !important;
+}
+
+.btn-link:hover {
+  font-family: Balsamiq Sans;
+  font-weight: bold;
+  color: #39A48C !important;
+  font-size: 100%;
+  text-align: left !important;
+  padding: 6px !important;
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+.btn-link:active {
+  font-family: Balsamiq Sans;
+  font-weight: bold;
+  color: #39A48C !important;
+  font-size: 100%;
+  text-align: left !important;
+  padding: 6px !important;
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+.card {
+background-color: transparent !important;
+border: hidden !important;
+}
+
+.arrow-right {
+  padding: 5px;
+  margin-bottom: 4px;
+}
+
+.arrow-right:active {
+  padding: 5px;
+  margin-bottom: 4px;
+  -webkit-transform: rotate(90deg);
+-moz-transform: rotate(90deg);
+-o-transform: rotate(90deg);
+-ms-transform: rotate(90deg);
+transform: rotate(90deg);
+}
+
+.arrow-right::selection {
+  padding: 5px;
+  margin-bottom: 4px;
+  -webkit-transform: rotate(90deg);
+-moz-transform: rotate(90deg);
+-o-transform: rotate(90deg);
+-ms-transform: rotate(90deg);
+transform: rotate(90deg);
 }
 
 .card-header {
   background-color: transparent !important;
+  border-bottom: hidden !important;
 }
 
 
@@ -64,6 +118,8 @@ h3 {
   z-index: 0 !important;
   margin-top: 5%;
 }
+
+/*
 
 .accordion-section .panel-default > .panel-heading {
     border: 0;
