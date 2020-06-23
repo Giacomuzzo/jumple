@@ -1,6 +1,7 @@
 
-$('#fullpage').fullpage({
-  anchors: ['section-1', 'section-2', 'section-3', 'footer']
+
+$(".rotate").click(function(){
+    $(this).toggleClass("down");
 });
 
 * Performs the movement (by CSS3 or by jQuery)
