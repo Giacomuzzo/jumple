@@ -11,7 +11,7 @@
   <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
 
@@ -19,34 +19,35 @@
 <body>
 
 
-  <div id="fullpage">
+<div id="fullpage">
 
     <!-- SEZIONE 1 -->
 
 <div class="section s1 active">
-  <div class="container faq">
+  <div class="container faq" style="margin-top: 4%">
+
+    <a class="arrow-icon">
+      <span class="left-bar"></span>
+      <span class="right-bar"></span>
+    </a>
 
     <h1>Domande frequenti</h1>
 
     <div class="container">
-        <div class="row">
-            <div class="col-10 mx-auto">
+        <div class="row" style="margin-top: 20%">
+            <div class="col-12 mx-auto">
                 <div class="accordion" id="faqExample">
                     <div class="card">
-                        <div class="card-header p-2"  id="headingOne">
+                        <div class="card-header p-2" id="headingOne">
                             <h5 class="mb-0">
-                                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <div><svg class="bi bi-chevron-double-right rotate" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                      <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
-                                      <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
-                                    </svg></div>
-                                    Cos'è Jumple?
-                                  </button>
+                              <button class="btn btn-link collapsed" id="clicker1" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <img src="images/chevron-double-right.svg" id="rotating1" onclick="Rotate()" class="normal" style="width: 18px"/>Cos'è Jumple?
+                              </button>
 
                               </h5>
                         </div>
 
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqExample">
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faqExample">
                             <div class="card-body">
                                 Jumple è il solo gioco interattivo a distanza per bambini che unisce l’attività fisica ai fattori di socializzazione e collaborazione.
                                 Nasce nel 2020 durante l’emergenza Covid - 19 per rispondere alle esigenze di socializzazione e movimento dei bambini in lockdown.
@@ -59,208 +60,169 @@
                     <div class="card">
                         <div class="card-header p-2" id="headingTwo">
                             <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              Q: What is Bootstrap 4?
+                            <button class="btn btn-link collapsed" id="clicker2" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <img src="images/chevron-double-right.svg" id="rotating2" onclick="Rotate()" class="normal" style="width: 18px"/>Perchè scaricare Jumple?
                             </button>
                           </h5>
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqExample">
                             <div class="card-body">
-                                Bootstrap is the most popular CSS framework in the world. The latest version released in 2018 is Bootstrap 4. Bootstrap can be used to quickly build responsive websites.
+                              Jumple è il solo gioco di squadra a distanza basato sullo sport e la collaborazione.
+                                L’installazione è facile e intuitiva, ed è pensato per garantire l’autonomia di uso da parte del bambino:</p>
+                                <ul>
+                                  <li>il bambino è seguito passo a passo durante l’apprendimento e il gioco;</li>
+                                  <li>l’applicazione gestisce autonomamente i tempi di attività e di riposo;</li>
+                                  <li>i sistemi di sicurezza, attivi durante la sessione di gioco, monitorano le sessioni di    videochiamate;</li>
+                                  <li>tutti i materiali foto prodotti dai bambini possono essere scaricati esclusivamente all’interno del tablet;</li>
+                                  <li>i genitori periodicamente ricevono una notifica di aggiornamento sulle sessioni di gioco.</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-header p-2" id="headingThree">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                  Q. What is another question?
+                                <button class="btn btn-link collapsed" id="clicker3" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  <img src="images/chevron-double-right.svg" id="rotating3" onclick="Rotate()" class="normal" style="width: 18px"/>Serve una connessione internet per giocare a Jumple?
                                 </button>
                               </h5>
                         </div>
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqExample">
                             <div class="card-body">
-                                The answer to the question can go here.
+                                Si. Jumple si appoggia su una tecnologia che utilizzo la connessione internet per le vari fasi di gioco.
                             </div>
                         </div>
                     </div>
-
+                    <div class="card">
+                        <div class="card-header p-2" id="headingFour">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" id="clicker4" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                  <img src="images/chevron-double-right.svg" id="rotating4" onclick="Rotate()" class="normal" style="width: 18px"/>Come Jumple tutela mio figlio?
+                                </button>
+                              </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqExample">
+                            <div class="card-body">
+                                Jumple utilizza due sistemi di sicurezza:
+                                <ul>
+                                <li> Grazie alla notificazione via e-mail, Jumple terrà costantemente aggiornati i resoconti delle attività di gioco del bambino: durata delle sessioni, lista degli amici ed informazioni aggiuntive.</li>
+                                <li>Intelligenza artificiale svolgerà un’ attività di monitoraggio individuando e comunicando, in tempo reale al genitore, eventuali circostanze anomale.</li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header p-2"  id="headingFive">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" id="clicker5" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <img src="images/chevron-double-right.svg" id="rotating5" onclick="Rotate()" class="normal" style="width: 18px"/>A quale età è consigliato Jumple?
+                                  </button>
+                              </h5>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqExample">
+                            <div class="card-body">
+                                Jumple è consigliato per bambini dai 6 anni agli 11 anni.
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </div>
-        <!--/row-->
+
     </div>
-    <!--container-->
-    <!--
 
-    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-      <div class="panel panel-default">
-        <div class="panel-heading p-3 mb-3" role="tab" id="heading0">
-          <h3 class="panel-title">
-            <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse0" aria-expanded="true" aria-controls="collapse0">
-              >> Cos’è Jumple?
-            </a>
-          </h3>
-        </div>
-        <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
-          <div class="panel-body px-3 mb-4">
-            <p>Jumple è il solo gioco interattivo a distanza per bambini che unisce l’attività fisica ai fattori di socializzazione e collaborazione.
-              Nasce nel 2020 durante l’emergenza Covid - 19 per rispondere alle esigenze di socializzazione e movimento dei bambini in lockdown.
-              Il progetto ha coinvolto una ricerca sul target molto raffinata per realizzare un prodotto completo.<br>
-              L’inclusione delle tecnologie di intelligenza artificiale, oltre a garantire il coinvolgimento del bambino,
-              fornisce prestazioni di monitoraggio e autonomia richieste dai genitori.</p>
-          </div>
-          </div>
-        </div>
-
-        <div class="panel panel-default">
-          <div class="panel-heading p-3 mb-3" role="tab" id="heading1">
-            <h3 class="panel-title">
-              <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                >> Perchè scaricare Jumple?
-              </a>
-            </h3>
-          </div>
-          <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
-            <div class="panel-body px-3 mb-4">
-              <p>Jumple è il solo gioco di squadra a distanza basato sullo sport e la collaborazione.
-                L’installazione è facile e intuitiva, ed è pensato per garantire l’autonomia di uso da parte del bambino:</p>
-                <ul>
-                  <li>il bambino è seguito passo a passo durante l’apprendimento e il gioco;</li>
-                  <li>l’applicazione gestisce autonomamente i tempi di attività e di riposo;</li>
-                  <li>i sistemi di sicurezza, attivi durante la sessione di gioco, monitorano le sessioni di    videochiamate;</li>
-                  <li>tutti i materiali foto prodotti dai bambini possono essere scaricati esclusivamente all’interno del tablet;</li>
-                  <li>i genitori periodicamente ricevono una notifica di aggiornamento sulle sessioni di gioco.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="panel panel-default">
-            <div class="panel-heading p-3 mb-3" role="tab" id="heading2">
-              <h3 class="panel-title">
-                <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
-                  >> Serve una connessione internet per giocare a Jumple?
-                </a>
-              </h3>
-            </div>
-            <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
-              <div class="panel-body px-3 mb-4">
-                <p>Si. Jumple si appoggia su una tecnologia che utilizzo la connessione internet per le vari fasi di gioco. </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="panel panel-default">
-            <div class="panel-heading p-3 mb-3" role="tab" id="heading3">
-              <h3 class="panel-title">
-                <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
-                  >> Come Jumple tutela mio figlio?
-                </a>
-              </h3>
-            </div>
-            <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
-              <div class="panel-body px-3 mb-4">
-                <p>Jumple utilizza due sistemi di sicurezza:</p>
-                <ul>
-                  <li> Grazie alla notificazione via e-mail, Jumple terrà costantemente aggiornati i resoconti delle attività di gioco del bambino: durata delle sessioni, lista degli amici ed informazioni aggiuntive.</li>
-                  <li>Intelligenza artificiale svolgerà un’ attività di monitoraggio individuando e comunicando, in tempo reale al genitore, eventuali circostanze anomale.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
--->
-
-      </div>
-    </div>
+</div>
+</div>
 
 <!-- SEZIONE 2 -->
 
-      <div class="section s2 active">
-        <div class="container faq">
-          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default">
-              <div class="panel-heading p-3 mb-3" role="tab" id="heading4">
-                <h3 class="panel-title">
-                  <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="true" aria-controls="collapse4">
-                    >> A quale età è consigliato Jumple?
-                  </a>
-                </h3>
-              </div>
-              <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
-                <div class="panel-body px-3 mb-4">
-                  <p>Jumple è consigliato per bambini dai 6 anni agli 11 anni.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="panel panel-default">
-                <div class="panel-heading p-3 mb-3" role="tab" id="heading5">
-                  <h3 class="panel-title">
-                    <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="true" aria-controls="collapse5">
-                      >> Quali abilità stimola Jumple?
-                    </a>
-                  </h3>
-                </div>
-                <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
-                  <div class="panel-body px-3 mb-4">
-                    <p>Jumple è progettato per stimolare la collaborazione e il gioco di squadra tra i bambini. La forte compoente sportiva e la narrazione hanno lo scopo di concretizzare l’interazione tra i giocatori per il raggiungimento di un obbiettivo comune.</p>
-                  </div>
-                  </div>
-                </div>
-
-                <div class="panel panel-default">
-                  <div class="panel-heading p-3 mb-3" role="tab" id="heading6">
-                    <h3 class="panel-title">
-                      <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="true" aria-controls="collapse6">
-                        >> Cosa serve a mio figlio per giocare a Jumple?
-                      </a>
-                    </h3>
-                  </div>
-                  <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
-                    <div class="panel-body px-3 mb-4">
-                      <p>Jumple è un gioco completo a 360°, per il suo utilizzo è sufficiente scaricare l’app nel proprio tablet e iniziare l’avventura.<br>
-Per rendere il gioco ancora più pratico abbiamo progettato, insieme a UGREEN®, <strong>ZAMPA</strong> l’unico supporto calibrato che offre la massima efficienza durante il tuo gioco.</p>
+<div class="section s2 active">
+  <div class="container faq" style="margin-top: -10%">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mx-auto">
+                <div class="accordion" id="faqExample2">
+                    <div class="card">
+                        <div class="card-header p-2" id="headingSix">
+                            <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" id="clicker6" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                              <img src="images/chevron-double-right.svg" id="rotating6" onclick="Rotate()" class="normal" style="width: 18px"/>Quali abilità stimola Jumple?
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#faqExample2">
+                            <div class="card-body">
+                              Jumple è progettato per stimolare la collaborazione e il gioco di squadra tra i bambini.
+                              La forte componente sportiva e la narrazione hanno lo scopo di concretizzare l’interazione tra i giocatori per il raggiungimento di un obbiettivo comune.
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-
-                <div class="panel panel-default">
-                  <div class="panel-heading p-3 mb-3" role="tab" id="heading7">
-                    <h3 class="panel-title">
-                      <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="true" aria-controls="collapse7">
-                        >> Quali tablet sono compatibili?
-                      </a>
-                    </h3>
-                  </div>
-                  <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
-                    <div class="panel-body px-3 mb-4">
-                      <p><strong>Tablet compatibili:</strong> tutti i tablet Android 4.1 e successive.<br><strong>I-pad compatibili:</strong>
-                        iPad Generazione 2 e successive, iPad Pro 11-pollici e iPad Pro 12.9 pollici. Sistema operativo iOS 9 e successive.</p>
+                    <div class="card">
+                        <div class="card-header p-2" id="headingSeven">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" id="clicker7" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                  <img src="images/chevron-double-right.svg" id="rotating7" onclick="Rotate()" class="normal" style="width: 18px"/>Cosa serve a mio figlio per giocare a Jumple?
+                                </button>
+                              </h5>
+                        </div>
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#faqExample2">
+                            <div class="card-body">
+                              Jumple è un gioco completo a 360°, per il suo utilizzo è sufficiente scaricare l’app nel proprio tablet e iniziare l’avventura.
+                              Per rendere il gioco ancora più pratico abbiamo progettato, insieme a
+                              <a class="link-ugreen" href="https://www.ugreen.com/"><i>UGREEN®</i></a>, <font color="#39A48C"><strong>ZAMPA</strong></font>
+                              l’unico supporto calibrato che offre la massima efficienza durante il tuo gioco.
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading p-3 mb-3" role="tab" id="heading8">
-                    <h3 class="panel-title">
-                      <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="true" aria-controls="collapse8">
-                        >> Come scarico Jumple?
-                      </a>
-                    </h3>
-                  </div>
-                  <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
-                    <div class="panel-body px-3 mb-4">
-                      <p>Jumple è scaricabile da <strong>AppStore</strong> e <strong>Google Play</strong> direttamente dal tuo tablet. Il primo accesso richiederà una rapida registrazione da parte del genitore e l’impostazione di alcuni strumenti di sicurezza.
-                        <br>Successivamente l’app guiderà il bambino alla creazione del suo profilo e all’inizio della missione.</p>
+                    <div class="card">
+                        <div class="card-header p-2" id="headingEight">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" id="clicker8" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                  <img src="images/chevron-double-right.svg" id="rotating8" onclick="Rotate()" class="normal" style="width: 18px"/>Quali tablet sono compatibili?
+                                </button>
+                              </h5>
+                        </div>
+                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#faqExample2">
+                            <div class="card-body">
+                              <strong>Tablet compatibili:</strong> tutti i tablet Android 4.1 e successive
+                                <strong>I-pad compatibili:</strong> iPads Generazione 2 e successive, iPad Pro 11-pollici e iPad Pro 12.9 pollici. Sistema operativo iOS 9 e successive.
+                            </div>
+                        </div>
                     </div>
-                  </div>
+                    <div class="card">
+                        <div class="card-header p-2" id="headingNine">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" id="clicker9" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                  <img src="images/chevron-double-right.svg" id="rotating9" onclick="Rotate()" class="normal" style="width: 18px"/>Come scarico Jumple?
+                               </button>
+                              </h5>
+                        </div>
+                        <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#faqExample2">
+                            <div class="card-body">
+                              Jumple è scaricabile da <a href="https://www.apple.com/it/ios/app-store/"><font color="#39A48C"><strong>AppStore</strong></font></a> e <a href="https://play.google.com/"><font color="#39A48C"><strong>Google Play</strong></font></a> direttamente dal tuo tablet.
+                              Il primo accesso richiederà una rapida registrazione da parte del genitore e l’impostazione
+                              di alcuni strumenti di sicurezza.
+                              <br><br>Successivamente l’app guiderà il bambino alla creazione del suo profilo e all’inizio della missione.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header p-2">
+                          <h5 class="contactUs">
+                            Hai altre domande? Inviaci un’<a href="mailto:info.jumple2020@gmail.com"><font color="#39A48C">e-mail.</font></a>
+                          </h5>
+                        </div>
+                      </div>
                 </div>
-              </div>
-
             </div>
+        </div>
+    </div>
+
+
+
+  </div>
+
 
     <!-- FOOTER -->
 
@@ -291,7 +253,7 @@ Per rendere il gioco ancora più pratico abbiamo progettato, insieme a UGREEN®,
             </a>
           </div>
         </div>
--->
+
 
   </div>
 
@@ -334,6 +296,9 @@ Per rendere il gioco ancora più pratico abbiamo progettato, insieme a UGREEN®,
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="vendors/jquery.easings.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script type="text/javascript" src="myscripts.js"></script>
+
 
         <script>
         new fullpage('#fullpage', {

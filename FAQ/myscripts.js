@@ -1,38 +1,53 @@
-
-
-$(".rotate").click(function(){
-    $(this).toggleClass("down");
+$(document).ready(function() {
+$('#clicker1').click(function() {
+    $('#rotating1').toggleClass('rotated');
+    });
 });
 
-* Performs the movement (by CSS3 or by jQuery)
-   */
-  function performMovement(v) {
-    // using CSS3 translate functionality
-    if (options.css3 && options.autoScrolling && !options.scrollBar) {
+$(document).ready(function() {
+$('#clicker2').click(function() {
+    $('#rotating2').toggleClass('rotated');
+});
+});
 
-      if (v.anchorLink == 'footer') {
-        footer_a = $('#section-footer').height();
-        footer_h = $('#footer-text').height();
-        var translate3d = 'translate3d(0px, -' + (v.dtop - footer_a + footer_h) + 'px, 0px)';
-      } else {
-        var translate3d = 'translate3d(0px, -' + v.dtop + 'px, 0px)';
-      }
+$(document).ready(function() {
+$('#clicker3').click(function() {
+    $('#rotating3').toggleClass('rotated');
+});
+});
 
-      transformContainer(translate3d, true);
+$(document).ready(function() {
+$('#clicker4').click(function() {
+    $('#rotating4').toggleClass('rotated');
+});
+});
 
-      setTimeout(function() {
-        afterSectionLoads(v);
-      }, options.scrollingSpeed);
-    }
+$(document).ready(function() {
+$('#clicker5').click(function() {
+    $('#rotating5').toggleClass('rotated');
+});
+});
 
-    // using jQuery animate
-    else {
+$(document).ready(function() {
+$('#clicker6').click(function() {
+    $('#rotating6').toggleClass('rotated');
+});
+});
 
-      var scrollSettings = getScrollSettings(v);
+$(document).ready(function() {
+$('#clicker7').click(function() {
+    $('#rotating7').toggleClass('rotated');
+});
+});
 
-      $(scrollSettings.element).animate(
-        scrollSettings.options, options.scrollingSpeed, options.easing).promise().done(function() { //only one single callback in case of animating  `html, body`
-        afterSectionLoads(v);
-      });
-    }
-  }
+$(document).ready(function() {
+$('#clicker8').click(function() {
+    $('#rotating8').toggleClass('rotated');
+});
+});
+
+$(document).ready(function() {
+$('#clicker9').click(function() {
+    $('#rotating9').toggleClass('rotated');
+});
+});
