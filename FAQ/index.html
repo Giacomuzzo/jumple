@@ -23,15 +23,10 @@
 <div class="section s1 active">
   <div class="container faq" style="margin-top: 4%">
 
-    <a class="arrow-icon">
-      <span class="left-bar"></span>
-      <span class="right-bar"></span>
-    </a>
-
     <h1>Domande frequenti</h1>
 
-    <div class="container">
-        <div class="row" style="margin-top: 20%">
+    <div class="container" id="container1">
+        <div class="row">
             <div class="col-12 mx-auto">
                 <div class="accordion" id="faqExample">
                     <div class="card">
@@ -65,14 +60,12 @@
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqExample">
                             <div class="card-body">
                               <p>Jumple è il solo gioco di squadra a distanza basato sullo sport e la collaborazione.
-                                L’installazione è facile e intuitiva, ed è pensato per garantire l’autonomia di uso da parte del bambino:</p>
-                                <ul>
-                                  <li>il bambino è seguito passo a passo durante l’apprendimento e il gioco;</li>
-                                  <li>l’applicazione gestisce autonomamente i tempi di attività e di riposo;</li>
-                                  <li>i sistemi di sicurezza, attivi durante la sessione di gioco, monitorano le sessioni di    videochiamate;</li>
-                                  <li>tutti i materiali foto prodotti dai bambini possono essere scaricati esclusivamente all’interno del tablet;</li>
-                                  <li>i genitori periodicamente ricevono una notifica di aggiornamento sulle sessioni di gioco.</li>
-                                </ul></p>
+                                L’installazione è facile e intuitiva, ed è pensato per garantire l’autonomia di uso da parte del bambino:
+                                il bambino è seguito passo a passo durante l’apprendimento e il gioco; l’applicazione gestisce autonomamente i tempi di attività e di riposo;
+                                  i sistemi di sicurezza, attivi durante la sessione di gioco, monitorano le sessioni di videochiamate;
+                                  tutti i materiali foto prodotti dai bambini possono essere scaricati esclusivamente all’interno del tablet;
+                                  i genitori periodicamente ricevono una notifica di aggiornamento sulle sessioni di gioco.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -132,6 +125,9 @@
 
 </div>
 </div>
+
+
+
 
 <!-- SEZIONE 2 -->
 
@@ -205,21 +201,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header p-2">
-                          <h5 class="contactUs">
-                            Hai altre domande? Inviaci un’<a href="mailto:info.jumple2020@gmail.com"><font color="#C3572A">e-mail</font></a> o contattaci al numero <font color="#C3572A">800 94 14 07</font>
-                          </h5>
-                        </div>
-                      </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-
   </div>
+
+        <h5 class="contactUs">
+          Hai altre domande? Inviaci un’<a href="mailto:info.jumple2020@gmail.com"><font color="#C3572A">e-mail</font></a> o contattaci al numero <font color="#C3572A">800 94 14 07</font>
+        </h5>
+
+
 
 
     <!-- FOOTER -->
@@ -254,6 +246,8 @@
 
 
   </div>
+
+</div>
 
   <!-- BARRA DI NAVIGAZIONE -->
 
@@ -298,8 +292,9 @@
 
         <script>
         new fullpage('#fullpage', {
-          //options here
 
+          //options here
+          
           parallax: true,
           loopBottom: true,
           autoScrolling: true,

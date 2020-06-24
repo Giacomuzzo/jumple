@@ -54,11 +54,6 @@ h3 {
 }
 
 
-
-
-
-
-
 .btn-link {
   font-family: Balsamiq Sans;
   font-weight: bold;
@@ -66,6 +61,7 @@ h3 {
   font-size: 100%;
   text-align: left !important;
   padding: 6px !important;
+  margin-top: -2%;
 }
 
 .btn-link:hover {
@@ -77,6 +73,7 @@ h3 {
   padding: 6px !important;
   text-decoration: none !important;
   outline: none !important;
+  margin-top: -2%;
 }
 
 .btn-link:active {
@@ -87,6 +84,7 @@ h3 {
   text-align: left !important;
   padding: 6px !important;
   text-decoration: none !important;
+  margin-top: -2%;
 }
 
 .btn-link:focus {
@@ -99,6 +97,7 @@ h3 {
   outline: none !important;
   box-shadow: none !important;
   text-decoration: none !important;
+  margin-top: -2%;
 }
 
 .card {
@@ -145,17 +144,21 @@ border: hidden !important;
     color: #39A48C !important;
     text-align: left !important;
     padding: 6px !important;
-    margin-top: 2%;
-  }
+    position: absolute;
+    bottom: 28% !important;
+    }
 
   @media screen and (max-width: 1600px) {
 
   h1 {
     font-size: 450%;
-    top: 200px;
-  }
+    }
 
   p {
+    font-size: 130%;
+  }
+
+ul {
     font-size: 130%;
   }
 
@@ -166,7 +169,7 @@ border: hidden !important;
   .contactUs {
     font-size: 150%;
     margin-right: -10%;
-    margin-top: 5%;
+    margin-left: 17%;
   }
 
   .btn-link img {
@@ -174,6 +177,16 @@ border: hidden !important;
   margin-bottom: 7px;
   margin-right: 8px;
   }
+
+#container1 {
+  position: absolute;
+  margin-top: -4%;
+}
+
+#container2 {
+  position: absolute;
+  margin-top: -4%;
+}
   }
 
   @media screen and (max-width: 1920px) {
@@ -184,48 +197,81 @@ border: hidden !important;
     p {
       font-size: 130%;
     }
+    ul {
+      font-size: 130%;
+    }
 
     h5 {
-      font-size: 200%;
+      font-size: 150%;
     }
 
     .contactUs {
       font-size: 150%;
       margin-right: -10%;
       margin-top: 5%;
+      margin-left: 17%;
     }
 
     .btn-link img {
     width: 20px;
     margin-bottom: 7px;
     margin-right: 8px;
+    }
+
+    #container1 {
+      position: absolute;
+      margin-top: -4%;
+    }
+
+    #container2 {
+      position: absolute;
+      margin-top: -4%;
     }
   }
 
   @media screen and (max-width: 1024px) {
+
     h1 {
-      font-size: 350%;
+      font-size: 250%;
       top: 120px;
+      margin-left: 15%;
     }
     p {
-      font-size: 100%;
+      font-size: 90%;
+    }
+    ul {
+      font-size: 90%;
     }
 
     h5 {
-      font-size: 150%;
+      font-size: 100%;
     }
 
     .contactUs {
-      font-size: 120%;
+      font-size: 110%;
       margin-right: -10%;
       margin-top: 5%;
+      margin-left: 22%;
     }
 
     .btn-link img {
-    width: 20px;
-    margin-bottom: 7px;
+    width: 15px;
+    margin-bottom: 3px;
     margin-right: 8px;
     }
+
+    #container1 {
+      position: absolute;
+      margin-top: -10%;
+      margin-left: 15%;
+    }
+
+    #container2 {
+      position: absolute;
+      margin-top: -8%;
+      margin-left: 15%;
+    }
+
   }
 
   @media screen and (max-width: 360px) {
@@ -238,22 +284,34 @@ border: hidden !important;
     h1 {
       font-size: 200%;
       top: 100px;
+      margin-left: 10px;
     }
     p {
-      font-size: 80%;
+      font-size: 70%;
     }
     ul {
-      font-size: 80%;
+      font-size: 70%;
     }
 
     h5 {
-      font-size: 90%;
+      font-size: 70%;
     }
 
     .contactUs {
-      font-size: 80%;
-      margin-right: -10%;
+      font-size: 60%;
+      margin-right: 0;
       margin-top: 5%;
+      bottom: 18% !important;
+      margin-left: 2%;
+    }
+
+    .p-2 {
+      padding: 0px !important;
+    }
+
+    .card-body {
+      padding: 0px !important;
+      margin-left: 2%;
     }
 
     .btn-link img {
@@ -262,8 +320,16 @@ border: hidden !important;
     margin-right: 8px;
     }
 
+    #container1 {
+      margin-top: -20%;
+      margin-left: -4%;
+    }
+
     #container2 {
-      margin-top: -80%;
+      margin-top: -40%;
+      margin-left: -4%;
+      padding-right: 0px !important;
+
     }
   }
 
@@ -556,40 +622,47 @@ i.fa-instagram {
 }
 }
 
-@media (max-width: 400px) {
+@media (max-width:400px) {
 
 .fixed-footer {
-height: 250px;
+    height: 97px;
 }
 
 #btn-footer {
-  font-size: 12px;
-  padding: 10px 8px;
+  display: none;
+  overflow: hidden !important;
 }
 .disattivati {
-  font-size: 10px;
-  padding: 10px 8px;
+  display: none;
+  overflow: hidden !important;
 }
+
 .infondo {
-  text-align: center;
-  font-size: 10px;
-  padding: 0;
-  margin: 0;
+  text-align: left;
+font-size: 9px;
+padding: 0;
+/* margin-top: 74%; */
+width: 44%;
+margin: -2px -22px;
 }
 
-.adestra {
-  display: flex;
-  bottom: -10px;
-  margin: 40px 40px;
-  align-items: center !important;
-}
+.adestra  {
+display: flex;
+    bottom: -26px;
+    margin: 40px 10px;
+    align-items: center !important;  }
+
   .img-apple {
-    width: 35%;
+    display: none;
+    overflow: hidden !important;
   }
 
-  .img-google {
-    width: 40%;
-  }
+  .img-google
+    {
+      display: none;
+      overflow: hidden !important;
+    }
+
 
   i.fa-instagram {
     font-size: 28px !important;
