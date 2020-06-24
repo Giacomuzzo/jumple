@@ -1,3 +1,6 @@
+
+//movement arrow//
+
 $(document).ready(function() {
 $('#clicker1').click(function() {
 	removeRotate(1);

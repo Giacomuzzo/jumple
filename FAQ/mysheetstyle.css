@@ -53,6 +53,12 @@ h3 {
   text-align: left !important;
 }
 
+
+
+
+
+
+
 .btn-link {
   font-family: Balsamiq Sans;
   font-weight: bold;
@@ -101,8 +107,9 @@ border: hidden !important;
 }
 
 #rotating1 #rotating2 #rotating3 #rotating4 #rotating5 #rotating6 #rotating7 #rotating8 #rotating9 {
+  width: 18px;
   margin-bottom: 4px;
-  margin-right: 2px;
+  margin-right: 8px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -135,11 +142,129 @@ border: hidden !important;
 .contactUs {
     font-family: Balsamiq Sans;
     font-weight: bold;
-    color: #000 !important;
-    font-size: 110%;
+    color: #39A48C !important;
     text-align: left !important;
     padding: 6px !important;
     margin-top: 2%;
+  }
+
+  @media screen and (max-width: 1600px) {
+
+  h1 {
+    font-size: 450%;
+    top: 200px;
+  }
+
+  p {
+    font-size: 130%;
+  }
+
+  h5 {
+    font-size: 200%;
+  }
+
+  .contactUs {
+    font-size: 150%;
+    margin-right: -10%;
+    margin-top: 5%;
+  }
+
+  .btn-link img {
+  width: 25px;
+  margin-bottom: 7px;
+  margin-right: 8px;
+  }
+  }
+
+  @media screen and (max-width: 1920px) {
+    h1 {
+      font-size: 450%;
+      top: 200px;
+    }
+    p {
+      font-size: 130%;
+    }
+
+    h5 {
+      font-size: 200%;
+    }
+
+    .contactUs {
+      font-size: 150%;
+      margin-right: -10%;
+      margin-top: 5%;
+    }
+
+    .btn-link img {
+    width: 20px;
+    margin-bottom: 7px;
+    margin-right: 8px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    h1 {
+      font-size: 350%;
+      top: 120px;
+    }
+    p {
+      font-size: 100%;
+    }
+
+    h5 {
+      font-size: 150%;
+    }
+
+    .contactUs {
+      font-size: 120%;
+      margin-right: -10%;
+      margin-top: 5%;
+    }
+
+    .btn-link img {
+    width: 20px;
+    margin-bottom: 7px;
+    margin-right: 8px;
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+  .s1 {
+      background-image: url('images/bg-faq-sm.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: top !important;
+    }
+    h1 {
+      font-size: 200%;
+      top: 100px;
+    }
+    p {
+      font-size: 80%;
+    }
+    ul {
+      font-size: 80%;
+    }
+
+    h5 {
+      font-size: 90%;
+    }
+
+    .contactUs {
+      font-size: 80%;
+      margin-right: -10%;
+      margin-top: 5%;
+    }
+
+    .btn-link img {
+    width: 10px;
+    margin-bottom: 7px;
+    margin-right: 8px;
+    }
+
+    #container2 {
+      margin-top: -80%;
+    }
   }
 
 /* BARRA DI NAVIGAZIONE */
@@ -431,7 +556,7 @@ i.fa-instagram {
 }
 }
 
-@media (max-width:400px) {
+@media (max-width: 400px) {
 
 .fixed-footer {
 height: 250px;
