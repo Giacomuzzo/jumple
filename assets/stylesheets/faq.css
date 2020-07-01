@@ -69,6 +69,7 @@ h3 {
   font-weight: bold;
   color: #39A48C !important;
   font-size: 100%;
+<<<<<<< HEAD:assets/stylesheets/faq.css
   text-align: left !important;
   padding: 6px !important;
   text-decoration: none !important;
@@ -126,6 +127,65 @@ border: hidden !important;
   border-bottom: hidden !important;
 }
 
+=======
+  text-align: left !important;
+  padding: 6px !important;
+  text-decoration: none !important;
+  outline: none !important;
+  margin-top: -2%;
+}
+
+.btn-link:active {
+  font-family: Balsamiq Sans;
+  font-weight: bold;
+  color: #39A48C !important;
+  font-size: 100%;
+  text-align: left !important;
+  padding: 6px !important;
+  text-decoration: none !important;
+  margin-top: -2%;
+}
+
+.btn-link:focus {
+  font-family: Balsamiq Sans;
+  font-weight: bold;
+  color: #39A48C !important;
+  font-size: 100%;
+  text-align: left !important;
+  padding: 6px !important;
+  outline: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+  margin-top: -2%;
+}
+
+.card {
+background-color: transparent !important;
+border: hidden !important;
+}
+
+#rotating1 #rotating2 #rotating3 #rotating4 #rotating5 #rotating6 #rotating7 #rotating8 #rotating9 {
+  width: 18px;
+  margin-bottom: 4px;
+  margin-right: 8px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.rotated {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  }
+
+.card-header {
+  background-color: transparent !important;
+  border-bottom: hidden !important;
+}
+
+>>>>>>> a6938fd82c85f464e3b9ed4407d1c403ec0f6a16:FAQ/mysheetstyle.css
 
 .s1 {
   background-image: url('../../images/faq/bg-faq.png');
@@ -276,7 +336,11 @@ ul {
 
   @media screen and (max-width: 360px) {
   .s1 {
+<<<<<<< HEAD:assets/stylesheets/faq.css
       background-image: url('../../images/faq/bg-faq-sm.png');
+=======
+      background-image: url('images/bg-faq-sm.png');
+>>>>>>> a6938fd82c85f464e3b9ed4407d1c403ec0f6a16:FAQ/mysheetstyle.css
       background-repeat: no-repeat;
       background-size: 100%;
       background-position: top !important;
