@@ -2,15 +2,16 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="one page scrolling for websites">
 
   <title></title>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="mysheetstyle.css" type="text/css">
-  <link rel="stylesheet" href="stylesheets/jquery.fullpage.min.css" type="text/css">
+  <link rel="stylesheet" href="assets/stylesheets/home.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="assets/stylesheets/jquery.fullpage.min.css" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
 
 </head>
 
@@ -22,64 +23,69 @@
 
 <!-- SEZIONE 1 -->
 
-    <div class="section s1 active">
+    <div class="section s1 active" id="myS1">
       <div class="container-fluid" id="container-s1">
         <div class="row w-100">
           <div class="col-1"></div>
-          <div class="column col">
+          <div class="column col-lg-4 col-sm-10">
             <div class="row w-100">
-              <h1 class="titolo-home">Jump in</h1>
-            </div>
-            <div class="row w-100">
-              <img class="logo-home" src="images/logo-home.png">
+              <video class="logo-animation" width="640" height="360" data-autoplay loop muted>
+              <source src="images/home/logo_3.webm" type="video/webm">
+              </video>
             </div>
             <div class="row w-100">
               <p class="pay-off">L’app per fare sport insieme
-                a distanza, divertendosi.<br>
+                a distanza, divertendosi.
                 La giungla ti sta aspettando!</p>
             </div>
             <div class="row w-100">
               <button class="cta-scarica-y">Scarica l'app</button>
             </div>
           </div>
-          <div class="column col">
+          <div class="column col-lg-6 col-sm-10">
             <div class="outers-media">
-             <!--<iframe class="media" width="560" height="315" src="https://www.youtube.com/embed/CbwIJMz9PAQ?autoplay=1&controls=0&modestbranding=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>-->
+              <a class="play" href="https://www.youtube.com/watch?v=7cg89lcKZiI" target="_blank">
+              <img class="img-play" src="images/home/play1.png"></a>
+              <video class="media" width="640" height="360" data-autoplay loop muted>
+                 <source src="images/home/videopromo.mp4" type="video/mp4">
+              </video>
+            </div>
            </div>
           </div>
           <div class="col-1"></div>
         </div>
       </div>
-    </div>
 
 
-<!-- SEZIONE 2 -->
 
-  <div class="section s2">
-    <div class="container-fluid" id="container-s2">
-      <div class="row" id="myS2">
-        <div class="column col-xl-0"></div>
-        <div class="column col-xl-7 col-lg-6 col-md-12 col-sm-12">
-          <img class="img-s" src="images/s2-img.png" alt="macchia">
-        </div>
-        <div class="column col-xl-4 col-lg-6 col-md-12 col-sm-12">
-          <div class="row w-100">
-            <div class="column col-lg-12" id="tit-s2">
-              <h1 style="color:#39A48C">Gioco di squadra</h1>
+
+      <!-- SEZIONE 2 -->
+
+        <div class="section s2">
+          <div class="container-fluid" id="container-s2">
+            <div class="row" id="myS2">
+              <div class="column col-xl-0"></div>
+              <div class="column col-xl-7 col-lg-6 col-md-12 col-sm-12">
+                <img class="img-s" src="images/home/s2-img.png">
+              </div>
+              <div class="column col-xl-4 col-lg-6 col-md-12 col-sm-12">
+                <div class="row w-100">
+                  <div class="column col-lg-12" id="tit-s2">
+                    <h1 style="color:#39A48C">Gioco di squadra</h1>
+                  </div>
+                </div>
+                <div class="row w-100">
+                  <div class="column col-lg-12 col-testo">
+                  <p>Missioni con i propri amici per
+                    vivere momenti emozionanti, insieme.
+                    Comunicare e vedersi in modo semplice e
+                    veloce tramite la webcam.</p></div>
+                  </div>
+                  </div>
+                  <div class="column col-xl-1"></div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="row w-100">
-            <div class="column col-lg-12 col-testo">
-            <p>Missioni con i propri amici per
-              vivere momenti emozionanti, insieme.
-              Comunicare e vedersi in modo semplice e
-              veloce tramite la webcam.</p></div>
-            </div>
-            </div>
-            <div class="column col-xl-1"></div>
-          </div>
-        </div>
-      </div>
 
 <!-- SEZIONE 3 - SLIDER1 -->
 
@@ -93,7 +99,7 @@
                   <h1 class="tit-entra" style="color: #39A48C">Missioni</h1>
                 </div>
                 <div class="row w-100">
-                  <p style="padding-right: 20%">Saltare, correre, indossare bizzarri copricapi. Per tuo figlio, attività dinamiche in branco.</p>
+                  <p>Saltare, correre, indossare bizzarri copricapi. Per tuo figlio, attività dinamiche in branco.</p>
                 </div>
                 <div class="row w-100">
                   <a class="btn-missione-dis"></a>
@@ -101,7 +107,10 @@
                 </div>
               </div>
               <div class="column col-xl-6 col-lg-6 col-md-10 col-sm-10">
-                <img class="schermate-gioco" src="images/missione.png" alt="schermata missioni">
+                <video class="schermate-gioco" width="909" height="558" autoplay loop muted>
+                <source src="images/home/missione0107_.webm" type="video/webm">
+                  Your browser does not support the video tag.
+                </video>
               </div>
             <div class="column col-xl-1 col-lg-1 col-md-1 col-sm-1"></div>
             </div>
@@ -119,7 +128,7 @@
                   <h1 class="tit-entra" style="color: #39A48C">Allenamento</h1>
                 </div>
                 <div class="row w-100">
-                  <p style="padding-right: 20%">Mini avventure individuali per divertirsi anche quando il resto del branco riposa.</p>
+                  <p>Mini avventure individuali per divertirsi anche quando il resto del branco riposa.</p>
                 </div>
                 <div class="row w-100">
                   <a class="btn-missione" href="index.html#slider1-1"></a>
@@ -127,7 +136,10 @@
                 </div>
               </div>
               <div class="column col-xl-6 col-lg-6 col-md-10 col-sm-10">
-                <img class="schermate-gioco" src="images/allenamento.png" alt="schermata allenamento">
+                <video class="schermate-gioco" width="909" height="558" autoplay loop muted>
+                <source src="images/home/allenamento0107.webm" type="video/webm">
+                  Your browser does not support the video tag.
+                </video>
               </div>
             <div class="column col-xl-1 col-lg-1 col-md-1 col-sm-1"></div>
             </div>
@@ -137,15 +149,16 @@
 
 <!-- SEZIONE 4 - SLIDER2 -->
 
-<div class="section s4">
+<div class="section s4" id="slider2-1">
   <div class="slide active" id="slider2-1">
-    <div class="row w-100" style="width: 100%; margin: 0; padding: 0">
-      <img class="img-foglie" src="images/top-slider2.1.png" alt="foglie">
+
+    <div class="row w-100" style="width: 100%; margin: 0; padding: 0" >
+
     </div>
     <div class="container-fluid" id="container-s4">
-      <div class="row w-100">
-        <div class="column col-xl-7 col-lg-6 col-md-12 col-sm-12">
-          <img class="img-mamma" src="images/slider2.1-img.png" alt="mamma-figlio">
+      <div class="row w-100" id="row-sezione4">
+        <div class="column col-xl-7 col-lg-5 col-md-12 col-sm-12">
+          <img class="img-mamma" src="images/home/slider2.1-img.png" alt="mamma-figlio">
         </div>
         <div class="column col-xl-4 col-lg-6 col-md-12 col-sm-12">
           <div class="row w-100">
@@ -154,7 +167,7 @@
             </div>
           </div>
           <div class="row w-100">
-            <div class="column col-xl-12 col-lg-12 col-md-12 col-testo">
+            <div class="column col-xl-12 col-lg-12 col-md-12 col-testo" id="p-s4">
               <p>Per grandi e piccini, Jumple è facile da installare e monitorare.
                 Sistemi di protezione integrati garantiscono la sicurezza.</p></div>
               </div>
@@ -170,20 +183,21 @@
       </div>
 
       <div class="slide active" id="slider2-2">
-        <div class="container-fluid" id="container-s4">
+
           <div class="row w-100" style="width: 100%; margin: 0; padding: 0">
-            <img class="img-foglie" src="images/top-slider2.1.png" alt="foglie">
+
           </div>
-          <div class="row w-100">
+          <div class="container-fluid" id="container-s4">
+          <div class="row w-100" id="row-sezione4">
             <div class="column col-1"></div>
-            <div class="column col-xl-4 col-lg-6 col-md-12 col-sm-12">
+            <div class="column col-xl-4 col-lg-5 col-md-12 col-sm-12">
               <div class="row w-100">
                 <div class="column col-lg-12 col-md-12">
                   <h1 class="tit-visione" style="color:#FF5433">Visione intelligente</h1>
                 </div>
               </div>
               <div class="row w-100">
-                <div class="column col-xl-12 col-lg-12 col-md-12 col-testo">
+                <div class="column col-xl-12 col-lg-12 col-md-12 col-testo" id="p-s42">
                   <p>La visione artificiale di Google Api Vision monitora le
                     sessioni di gioco segnalando eventuali situazioni di pericolo.</p></div>
                   </div>
@@ -191,8 +205,8 @@
                     <div class="column col-xl-12 col-lg-12 col-md-12"></div>
                   </div>
                 </div>
-                <div class="column col-xl-7 col-lg-6 col-md-12 col-sm-12">
-                  <img class="tablet-mamma" src="images/slider2.2-img.png" alt="tablet-mamma">
+                <div class="column col-xl-7 col-lg-5 col-md-12 col-sm-12">
+                  <img class="img-tablet" src="images/home/slider2.2-img.png" alt="tablet-mamma">
                 </div>
                 <div class="column col-xl-1"></div>
               </div>
@@ -201,21 +215,21 @@
 
           <div class="slide active" id="slider2-3">
             <div class="row w-100" style="width: 100%; margin: 0; padding: 0">
-              <img class="img-foglie" src="images/top-slider2.1.png" alt="foglie">
+
             </div>
             <div class="container-fluid" id="container-s4">
-              <div class="row w-100">
+              <div class="row w-100" id="row-sezione4">
                 <div class="column col-xl-7 col-lg-6 col-md-12 col-sm-12">
-                  <img class="img-mamma" src="images/slider2.3-img.png" alt="mamma-figlio">
+                  <img class="img-mamma" src="images/home/slider2.3-img.png" alt="mamma-figlio">
                 </div>
-                <div class="column col-xl-4 col-lg-6 col-md-12 col-sm-12">
+                <div class="column col-xl-4 col-lg-5 col-md-12 col-sm-12" id="col-equilibrio">
                   <div class="row w-100">
                     <div class="column col-lg-12 col-md-12">
                       <h1 class="tit-pratico" style="color:#F5D739">Equilibrio nel gioco</h1>
                     </div>
                   </div>
                   <div class="row w-100">
-                    <div class="column col-xl-12 col-lg-12 col-md-12 col-testo">
+                    <div class="column col-xl-12 col-lg-12 col-md-12 col-testo" id="p-s4">
                       <p>Impostando i limiti di tempo per tuo figlio il gioco si bloccherà
                         quando sarà il momento di fare una pausa o i compiti! </p></div>
                       </div>
@@ -237,7 +251,7 @@
             <div class="row w-100" style="padding: 0 30px">
               <div class="column col-xl-4 col-lg-4 col-md-4 col-sm-12" style="padding: 0 15px">
                 <div class="row w-100">
-                <img class="img-funziona" src="images/s5-img1.png" alt="download app">
+                <img class="img-funziona" src="images/home/s5-img1.png" alt="download app">
                 </div>
                 <div class="row w-100">
                 <p class="dida-s5">Scarica l’app dallo store</p>
@@ -245,7 +259,7 @@
               </div>
               <div class="column col-xl-4 col-lg-4 col-md-4 col-sm-12" style="padding: 0 15px">
                 <div class="row w-100">
-                <img class="img-funziona" src="images/s5-img2.png" alt="sicurezza">
+                <img class="img-funziona" src="images/home/s5-img2.png" alt="sicurezza">
                 </div>
                 <div class="row w-100">
                 <p class="dida-s5">Imposta l’area di sicurezza</p>
@@ -253,7 +267,7 @@
               </div>
               <div class="column col-xl-4 col-lg-4 col-md-4 col-sm-12" style="padding: 0 15px">
                 <div class="row w-100">
-                <img class="img-funziona" src="images/s5-img3.png" alt="gioca">
+                <img class="img-funziona" src="images/home/s5-img3.png" alt="gioca">
                 </div>
                 <div class="row w-100">
                 <p class="dida-s5">Divertiti in movimento!</p>
@@ -272,17 +286,20 @@
         <div class="column col-xl-1 col-lg-1 col-md-1 col-sm-1"></div>
         <div class="column col-xl-4 col-lg-4 col-md-10 col-sm-10">
           <div class="row w-100">
-            <img class="logo-app" src="images/logo-app.png" alt="logo-app">
+            <img class="logo-app" src="images/home/logo-app.png" alt="logo-app">
           </div>
           <div class="row w-100">
             <h1 class="tit-entra">Entra in Jumple</h1>
           </div>
           <div class="row w-100">
-            <button class="cta-scarica-y" >Scarica l'app</button>
+            <button class="cta-scarica-y" id="cta-scarica-s6" >Scarica l'app</button>
           </div>
         </div>
         <div class="column col-xl-5 col-lg-5 col-md-10 col-sm-10">
-          <img class="img-ipad" src="images/ipad.png" alt="ipad">
+          <video class="ipad-home" width="909" height="558" autoplay loop muted>
+          <source src="images/home/ipad-home.webm" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
         </div>
         <div class="column col-xl-2 col-lg-2 col-md-12 col-sm-12">
           <div class="row w-100" style="margin-bottom: 20%; margin-top: 35%; margin-left: 5%;">
@@ -302,17 +319,19 @@
           <div class="column col-xl-1 col-lg-1 col-md-1 col-sm-1"></div>
           <div class="column col-xl-4 col-lg-4 col-md-10 col-sm-10">
             <div class="row w-100">
-              <img class="logo-app" src="images/logo-app.png" alt="logo-app">
+              <img class="logo-app" src="images/home/logo-app.png" alt="logo-app">
             </div>
             <div class="row w-100">
               <h1 class="tit-entra">Entra in Jumple</h1>
             </div>
             <div class="row w-100">
-              <button class="cta-scarica-y">Scarica l'app</button>
+              <button class="cta-scarica-y" id="cta-scarica-s6">Scarica l'app</button>
             </div>
           </div>
           <div class="column col-xl-5 col-lg-5 col-md-10 col-sm-10">
-            <img class="img-tablet" src="images/tablet.png" alt="tablet">
+            <video class="tablet-home" width="909" height="558" autoplay loop muted>
+            <source src="images/home/tablet-home.webm" type="video/webm">
+            </video>
           </div>
           <div class="column col-xl-2 col-lg-2 col-md-12 col-sm-12">
             <div class="row w-100" style="margin-bottom: 20%; margin-top: 35%; margin-left: 5%;">
@@ -331,11 +350,11 @@
 
           <div class="fixed-footer">
             <div class="scritte-footer">
-              <a  class="btn home disabled" href="#" id="btn-footer">Home</a>
-              <a class="btn chi siamo" href="chi_siamo/index.html" id="btn-footer" >Chi siamo</a></li>
-              <a id="btn-footer" class="btn Faq" href="faq/index.html">FAQ</a>
-              <a id="btn-footer" class="btn partnership" href="chi_siamo/index.html#partnership">Partnership</a>
-              <a id="btn-footer" class="btn italia"><img src="images/flag.png" alt="Italia" style="padding: 8px">Italia</a>
+              <a id="btn-footer" class="btn home" href="index.html">Home</a>
+              <a id="btn-footer" class="btn chi siamo" href="chisiamo.html">Chi siamo</a></li>
+              <a id="btn-footer" class="btn Faq" href="faq.html">FAQ</a>
+              <a id="btn-footer" class="btn partnership" href="chisiamo.html#partnership">Partnership</a>
+              <a id="btn-footer" class="btn italia"><img src="images/home/flag.png" alt="Italia" style="padding: 8px">Italia</a>
               <br>
               <h3 class="disattivati" href="#">Termini e Condizioni</h3>
               <h3 class="disattivati" href="#">|</h3>
@@ -350,17 +369,19 @@
             <div class="footer-bottom">
               <div class="infondo">Jumple | Via Giuseppe Candiani, 20138 Milano | gruppo DivoC<br>® 2020 - Jumple. All right reserved</div>
               <a class="adestra">
-                <img class="img-apple" src="images/app store.png" style="padding: 0px 10px 10px 10px">
-                <img class="img-google" src="images/google play.png" style="padding: 0px 10px 10px 10px">
+                <img class="img-apple" src="images/home/app store.png" style="padding: 0px 10px 10px 10px">
+                <img class="img-google" src="images/home/google play.png" style="padding: 0px 10px 10px 10px">
                 <i class="fa fa-instagram" style="color:white"></i>
               </a>
             </div>
           </div>
 
 
-</div>
+<!-- section 6 -->
+  </div>
 
-</div
+<!-- fullpage -->
+</div>
 
 
 
@@ -371,7 +392,7 @@
         <input type="checkbox" id="nav-check">
         <div class="nav-header">
           <div class="nav-title">
-            <img class="logo" src="images/logo.png" alt="img">
+            <img class="logo" src="images/home/logo.png">
           </div>
         </div>
         <div class="nav-btn">
@@ -383,34 +404,22 @@
         </div>
 
         <div class="nav-links">
-          <a class="active" href="#" target="_blank">Home</a>
-          <a href="chi_siamo/index.html" target="_blank">Chi siamo</a>
-          <a href="faq/index.html" target="_blank">FAQ</a>
+          <a class="active" href="#" >Home</a>
+          <a href="chisiamo.html">Chi siamo</a>
+          <a href="faq.html">FAQ</a>
         </div>
 
 
         <div class="download">
-          <button class="btn btn-menu-outline-success" type="button" a href="#google play">Google Play</button>
-          <button class="btn btn-menu-outline-success" type="button" a href="#app store">App Store</button>
+          <a href="https://play.google.com/" target="_blank"><button class="btn btn-menu-outline-success" type="button">Google Play</button></a>
+          <a href="https://www.apple.com/it/ios/app-store/" target="_blank"><button class="btn btn-menu-outline-success" type="button">App Store</button></a>
         </div>
       </div>
 
 
-
-
-
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-      <!-- <script src="dist/jquery.fullpage.min.js"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script> -->
-
-<!--
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullpage.min.js"></script>
-      <script src="myscripts.js"></script>
--->
-
+      <!-- template -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script> -->
       <script>
-
       new fullpage('#fullpage', {
         //options here
         loopBottom: true,
@@ -418,9 +427,7 @@
         autoScrolling: true,
         scrollHorizontally: false,
         css3: true,
-
       });
-
     </script>
 
   </body>
